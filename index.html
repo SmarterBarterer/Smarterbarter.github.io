@@ -25,15 +25,15 @@
       margin-top: 1rem;
     }
     nav a {
-      color: #f5c542;
-      text-decoration: none;
-      margin: 0 1rem;
+      color: gold;
       font-weight: bold;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.3s ease;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
     nav a:hover {
-      border-color: #f5c542;
+      color: #ffd700;
+      text-shadow: 0 0 8px #ffd700;
     }
     main {
       max-width: 800px;
@@ -48,29 +48,66 @@
       color: #888;
       padding-bottom: 1rem;
     }
+    section {
+      margin: 4rem 0;
+    }
+    form {
+      max-width: 400px;
+      margin: 2rem auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    button {
+      padding: 1rem 2rem;
+      background-color: gold;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="smarter-barter-banner.jpg" alt="Smarter Barter Logo">
+    <img src="smarter-barter-banner.jpg" alt="Smarter Barter Banner">
     <h1>Smarter Barter</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">How It Works</a>
-      <a href="#">Join Us</a>
-      <a href="#">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#join">Join Us</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
-  <main>
-    <h2>Revolutionizing Trade Beyond Borders</h2>
-    <p>
-      Smarter Barter is the global platform empowering trade without currency limitations.
-      Whether you're a local merchant, visionary developer, or freedom-minded innovator,
-      you can offer, earn, invest, and thrive — powered by trust and driven by purpose.
-    </p>
-  </main>
-  <footer>
-    Contact: <a href="mailto:SmarterBarterer@gmail.com">SmarterBarterer@gmail.com</a><br>
+  </header>  <main id="home">
+    <section>
+      <h2>Revolutionizing Trade Beyond Borders</h2>
+      <p>Smarter Barter is the global platform empowering trade without currency limitations. Whether you’re a local merchant, visionary developer, or freedom-minded innovator, you can offer, earn, invest, and thrive — powered by trust and driven by purpose.</p>
+    </section><section id="how-it-works">
+  <h2>How It Works</h2>
+  <p>We connect needs with solutions, crossing cultures and currencies through our proprietary SB credit. Trade what you have for what you need in a global exchange of value.</p>
+</section>
+
+<section id="join">
+  <h2>Join the Smarter Barter Beta</h2>
+  <p>Be the first to revolutionize how the world trades.</p>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="interest" placeholder="Why are you interested?"></textarea>
+    <button type="submit">Sign Up</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:SmarterBarterer@gmail.com">SmarterBarterer@gmail.com</a></p>
+</section>
+
+  </main>  <footer>
     &copy; 2025 Smarter Barter. All rights reserved.
   </footer>
 </body>
