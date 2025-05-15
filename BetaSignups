@@ -1,1 +1,17 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beta Signup - Smarter Barter</title>
+</head>
+<body style="background-color: #111; color: #fff; font-family: Arial, sans-serif; text-align: center; padding: 2rem;">
+  <h1>Join the Smarter Barter Beta</h1>
+  <p>Be the first to revolutionize how the world trades.</p>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 400px; margin: auto;">
+    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 1rem; margin: 1rem 0;">
+    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 1rem; margin: 1rem 0;">
+    <textarea name="interest" placeholder="Why are you interested?" style="width: 100%; padding: 1rem; margin: 1rem 0;"></textarea>
+    <button type="submit" style="padding: 1rem 2rem; background-color: gold; border: none; font-weight: bold;">Sign Up</button>
+  </form>
+</body>
+</html>
